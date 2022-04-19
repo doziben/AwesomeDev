@@ -9,7 +9,7 @@ const getColor = () => {
 }
 
 //converting string to array
-const value = "rgba(10, 132, 255, 1)";
+const value = getColor();
 const array = value.replace(/\s/g,'');
 
 const array1 = Array.from(array);
@@ -20,37 +20,44 @@ function filterArr(num) {
 }
 
 function getArr(arr, position) { 
-    const action = arr[position];
+    const action = (arr[position]);
     return action
 }
+
 const array2 = array1.filter(filterArr)
 console.log(array2)
-console.log(parseInt(array2))
-//declaring values 
-const first = getArr(array2, 0) + getArr(array2, 1);
-const second = getArr(array2, 2) + getArr(array2, 3) + getArr(array2, 4);
-const third = getArr(array2, 5) + getArr(array2, 6) + getArr(array2, 7);
-const last = getArr(array2, 8);
+console.log()
 
-console.log(first + second)
+//declaring values 
+const first = parseInt(getArr(array2, 0) + getArr(array2, 1));
+const second = parseInt(getArr(array2, 2) + getArr(array2, 3) + getArr(array2, 4));
+const third = parseInt(getArr(array2, 5) + getArr(array2, 6) + getArr(array2, 7));
+const last = parseInt(getArr(array2, 8));
+
+
 const mainColor = [first, second, third, last];
 console.log(mainColor)
 
+
+//creating hover
 const createHover = () => {
 const action1 = mainColor[0] + 20;
 const action2 = mainColor[1] + 50;
 return [action1, action2]
 }
 
-console.log(createHover())
-console.log([20 + 30]);
+//manipulate Array
+function newHover(e) {
+    const hoverValue = createHover();
+        e.shift();
+        e.shift();
+        e.unshift(hoverValue[1]);
+        e.unshift(hoverValue[0]);
+    return (e);
+}
 
-// Manipulate Array
-// const hoverValue = createHover();
-
-// mainColor.shift();
-// mainColor.shift();
-// mainColor.unshift(hoverValue[1]);
-// mainColor.unshift(hoverValue[0]);
-
-
+//Passing back to CSS file
+const primaryHover = newHover(mainColor)
+const test = root.style  = `--primary-hover: rgba(${primaryHover});`;
+console.log(test)
+console.log(getColor());
