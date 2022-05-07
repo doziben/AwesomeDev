@@ -1,0 +1,54 @@
+//Header Component
+.header {
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    justify-content: space-between;
+    align-items: center;
+
+    &-nav {
+        #openNav {
+            width: 2.5rem;
+        }
+        nav {
+            display: none;
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            top: 4rem;
+            right: 0;
+            left: 0;
+            background-color: var(--dark-main-color);
+            z-index: 999;
+
+            .nav-links {
+                margin-top: 4rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 1rem;
+
+                .header-nav-link {
+                    text-decoration: none;
+                    font-family: "Inter" , sans-serif;
+                    font-size: 3rem;
+                    animation-name: header-animation;
+                    animation-delay: calc(var(--order) * 100ms);
+                    animation-duration: 1000ms;
+                }
+            }
+        }
+    }
+}
+
+@keyframes header-animation {
+    0% {
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 100;
+    }
+}

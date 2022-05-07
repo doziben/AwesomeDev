@@ -1,0 +1,13 @@
+
+.secondary-cta {
+    color: white;
+    text-decoration: none;
+    font-family: "Inter" , san-serif;
+    font-size: 1.1rem;
+    background-color: var(--dark-main-color);
+    padding: 1rem 1.5rem;
+    width: auto;
+    margin-top: 1rem; 
+    margin-bottom: 2rem;
+    border-radius: 12px;
+}

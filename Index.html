@@ -11,21 +11,23 @@
 
     <header class="container">
         <div class="header">
-            <img src="" class="logo" alt="logo">
-            <div class="header-right">
-                <img src="" alt="open nav">
+            <img src="Assets/Icons/Logo.svg" class="logo" alt="logo">
+            <div class="header-nav">
+                <img src="Assets/Icons/nav-icon.svg" alt="open nav" id="openNav">
                 <nav>   
-                    <a href="#" class="header-right-link">Projects</a>
-                    <a href="#" class="header-right-link">About Me</a>
-                    <a href="#" class="header-right-link">Contact</a>
-                    <div class="header-right-mode"></div>
+                    <div class="nav-links container">
+                        <a href="#" class="header-nav-link" style="--order: 1;">Projects</a>
+                        <a href="#" class="header-nav-link" style="--order: 2;">About Me</a>
+                        <a href="#" class="header-nav-link" style="--order: 3;">Contact</a>
+                        <div class="header-nav-mode"></div>
+                    </div>
                 </nav>
             </div>
         </div>
     </header>
 
     <section class="hero container" id="hero">
-        <img src="" alt="" class="hero-img">
+        <img src="Assets/Images/memoji.png" alt="hero image" class="hero-img">
         <div class="hero-text">
             <h1>Solving Problems with Creative Development</h1>
             <p> Award-Winning web developer with over 3+ years of working experience with FAANG companies like Apple, Google, Facebook, and many more</p>
@@ -33,7 +35,154 @@
         </div>
     </section>
 
+    <section class="brands container">
+        <div class="brands-row">
+            <img src="Assets/Icons/Verizon.svg" class="brands-row-logo" alt="Verizon logo">
+            <img src="Assets/Icons/Visa.svg" class="brands-row-logo" alt="VISA logo">
+            <img src="Assets/Icons/Walmart.svg" class="brands-row-logo" alt="Walmart logo">
+            <img src="Assets/Icons/JP Morgan.svg" class="brands-row-logo" alt="JP Morgan logo">
+            <img src="Assets/Icons/Samsung.svg" class="brands-row-logo" alt="Samsung logo">
+            <img src="Assets/Icons/Tinder.svg" class="brands-row-logo" alt="Tinder logo">
+        </div>
+    </section>
+
+    <section class="about container" id="aboutMe">
+        <div class="about-text">
+            <p>AWESOME DEV</p>
+            <h1>Frontend Engineer based in Lagos</h1>
+            <p> Award-Winning web developer with over 3+ years of working experience with FAANG companies like Apple, Google, Facebook, and many more</p>
+        </div>
+        <div class="about-image">
+            <div class="about-image-left">
+                <img class="about-image-left-1" src="Assets/Images/Image1.png">
+            </div>
+            <div class="about-image-right">
+                <img class="about-image-right-1" src="Assets/Images/Image2.png">
+                <img class="about-image-right-2" src="Assets/Images/Image3.png">
+            </div>
+        </div>
+    </section>
+
+    <section class="skills container" id="skills">
+        <div class="skills-text">
+            <h1>Bringing Ideas <br> to Life</h1>
+            <p> Award-Winning web developer with over 3+ years of working experience with FAANG companies like Apple, Google, Facebook, and many more</p>
+            <a href="#" class="primary-cta"> Work with me</a>
+        </div>
+
+        <div class="skills-carousel">
+            <div class="skills-carousel-row-1">
+                <div class="skill"><img src="Assets/Icons/skill1.svg"></div>
+                <div class="skill"><img src="Assets/Icons/skill2.svg"></div>
+                <div class="skill"><img src="Assets/Icons/skill3.svg"></div>
+                <div class="skill"><img src="Assets/Icons/skill4.svg"></div>
+                <div class="skill"><img src="Assets/Icons/skill5.svg"></div>      
+            </div>
+
+            <div class="skills-carousel-row-2">  
+                <div class="skill"><img src="Assets/Icons/skill6.svg"></div>
+                <div class="skill"><img src="Assets/Icons/skill7.svg"></div>
+                <div class="skill"><img src="Assets/Icons/skill8.svg"></div>
+                <div class="skill"><img src="Assets/Icons/skill9.svg"></div>
+                <div class="skill"><img src="Assets/Icons/skill10.svg"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio container" id="portfolio">
+
+        <h1>Projects</h1>
+        <div class="portfolio-row-left">
+            <div class="portfolio-row-left-project">
+                <img src="Assets/Images/Portfolio-Image-1.png" class="portfolio-row-left-project-image">
+                <a href=""><div class="portfolio-row-left-project-text">
+                    <h3>Octopus AI</h3>
+                    <p>Cloud AI Automation</p>
+                </div></a>
+            </div>
+
+            <div class="portfolio-row-left-project">
+                <img src="Assets/Images/Portfolio-Image-2.png" class="portfolio-row-left-project-image">
+                <a href=""><div class="portfolio-row-left-project-text">
+                    <h3>Relo</h3>
+                    <p>Video Streaming App</p>
+                </div></a>
+            </div>
+        </div>
+
+        <div class="portfolio-row-right">
+            <div class="portfolio-row-right-project">
+                <img src="Assets/Images/Portfolio-Image-3.png" class="portfolio-row-right-project-image">
+                <a href=""><div class="portfolio-row-right-project-text">
+                    <h3>Foodies Hub</h3>
+                    <p>Food Booking Platform</p>
+                </div></a>
+            </div>
+
+            <div class="portfolio-row-right-project">
+                <img src="Assets/Images/Portfolio-Image-4.png" class="portfolio-row-right-project-image">
+                <a href=""><div class="portfolio-row-right-project-text">
+                    <h3>FinanciWise</h3>
+                    <p>Finance App</p>
+                </div></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner container" id="banner">
+        <h1>Let's Work Together</h1>
+        <a href="" class="secondary-cta"> Work with me</a>
+    </section>
 </body>
+
+<footer>
+    <img src="Assets/Icons/Logo.svg" class="logo" alt="logo">
+    <p>AwesomeDev 2022</p>
+    <div class="social">
+        <a href="" class="social-icon">
+            <svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_88_1349)">
+            <path d="M10.0669 29C22.1394 29 28.7444 18.9956 28.7444 10.3225C28.7444 10.0412 28.7381 9.75373 28.7256 9.47248C30.0105 8.54328 31.1193 7.39234 32 6.07373C30.8034 6.60613 29.5329 6.95384 28.2319 7.10498C29.6017 6.28388 30.6274 4.99396 31.1187 3.47436C29.8301 4.23808 28.4208 4.77682 26.9513 5.06748C25.9611 4.01541 24.652 3.31882 23.2262 3.0854C21.8005 2.85198 20.3376 3.09473 19.0637 3.77613C17.7897 4.45752 16.7757 5.53961 16.1785 6.85508C15.5812 8.17056 15.4339 9.64615 15.7594 11.0537C13.15 10.9228 10.5972 10.2449 8.26664 9.06413C5.93604 7.88332 3.87959 6.22592 2.23062 4.19936C1.39253 5.64432 1.13608 7.35419 1.51337 8.98145C1.89067 10.6087 2.87342 12.0313 4.26188 12.96C3.2195 12.9269 2.19997 12.6462 1.2875 12.1412V12.2225C1.28657 13.7389 1.8108 15.2088 2.77108 16.3824C3.73136 17.5559 5.06843 18.3607 6.555 18.66C5.58941 18.9242 4.57598 18.9627 3.59313 18.7725C4.01261 20.0766 4.82876 21.2172 5.92769 22.0351C7.02662 22.853 8.35349 23.3075 9.72313 23.335C7.3979 25.1615 4.52557 26.1522 1.56875 26.1475C1.04438 26.1467 0.520532 26.1145 0 26.0512C3.00381 27.9783 6.49804 29.0018 10.0669 29Z"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_88_1349">
+            <rect width="32" height="32" fill=""/>
+            </clipPath>
+            </defs></svg>
+        </a>
+        <a href="" class="social-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 2.88125C20.275 2.88125 20.7813 2.9 22.4625 2.975C24.025 3.04375 24.8688 3.30625 25.4313 3.525C26.175 3.8125 26.7125 4.1625 27.2688 4.71875C27.8313 5.28125 28.175 5.8125 28.4625 6.55625C28.6813 7.11875 28.9438 7.96875 29.0125 9.525C29.0875 11.2125 29.1063 11.7188 29.1063 15.9875C29.1063 20.2625 29.0875 20.7688 29.0125 22.45C28.9438 24.0125 28.6813 24.8563 28.4625 25.4188C28.175 26.1625 27.825 26.7 27.2688 27.2563C26.7063 27.8188 26.175 28.1625 25.4313 28.45C24.8688 28.6688 24.0188 28.9313 22.4625 29C20.775 29.075 20.2688 29.0938 16 29.0938C11.725 29.0938 11.2188 29.075 9.5375 29C7.975 28.9313 7.13125 28.6688 6.56875 28.45C5.825 28.1625 5.2875 27.8125 4.73125 27.2563C4.16875 26.6938 3.825 26.1625 3.5375 25.4188C3.31875 24.8563 3.05625 24.0063 2.9875 22.45C2.9125 20.7625 2.89375 20.2563 2.89375 15.9875C2.89375 11.7125 2.9125 11.2062 2.9875 9.525C3.05625 7.9625 3.31875 7.11875 3.5375 6.55625C3.825 5.8125 4.175 5.275 4.73125 4.71875C5.29375 4.15625 5.825 3.8125 6.56875 3.525C7.13125 3.30625 7.98125 3.04375 9.5375 2.975C11.2188 2.9 11.725 2.88125 16 2.88125ZM16 0C11.6563 0 11.1125 0.01875 9.40625 0.09375C7.70625 0.16875 6.5375 0.44375 5.525 0.8375C4.46875 1.25 3.575 1.79375 2.6875 2.6875C1.79375 3.575 1.25 4.46875 0.8375 5.51875C0.44375 6.5375 0.16875 7.7 0.09375 9.4C0.01875 11.1125 0 11.6563 0 16C0 20.3438 0.01875 20.8875 0.09375 22.5938C0.16875 24.2938 0.44375 25.4625 0.8375 26.475C1.25 27.5313 1.79375 28.425 2.6875 29.3125C3.575 30.2 4.46875 30.75 5.51875 31.1563C6.5375 31.55 7.7 31.825 9.4 31.9C11.1063 31.975 11.65 31.9937 15.9938 31.9937C20.3375 31.9937 20.8813 31.975 22.5875 31.9C24.2875 31.825 25.4563 31.55 26.4688 31.1563C27.5188 30.75 28.4125 30.2 29.3 29.3125C30.1875 28.425 30.7375 27.5313 31.1438 26.4813C31.5375 25.4625 31.8125 24.3 31.8875 22.6C31.9625 20.8938 31.9813 20.35 31.9813 16.0063C31.9813 11.6625 31.9625 11.1188 31.8875 9.4125C31.8125 7.7125 31.5375 6.54375 31.1438 5.53125C30.75 4.46875 30.2063 3.575 29.3125 2.6875C28.425 1.8 27.5313 1.25 26.4813 0.84375C25.4625 0.45 24.3 0.175 22.6 0.1C20.8875 0.01875 20.3438 0 16 0Z" fill=""/>
+                <path d="M16 7.78125C11.4625 7.78125 7.78125 11.4625 7.78125 16C7.78125 20.5375 11.4625 24.2188 16 24.2188C20.5375 24.2188 24.2188 20.5375 24.2188 16C24.2188 11.4625 20.5375 7.78125 16 7.78125ZM16 21.3312C13.0563 21.3312 10.6687 18.9438 10.6687 16C10.6687 13.0563 13.0563 10.6687 16 10.6687C18.9438 10.6687 21.3312 13.0563 21.3312 16C21.3312 18.9438 18.9438 21.3312 16 21.3312Z" fill=""/>
+                <path d="M26.4625 7.45635C26.4625 8.51885 25.6 9.3751 24.5438 9.3751C23.4813 9.3751 22.625 8.5126 22.625 7.45635C22.625 6.39385 23.4875 5.5376 24.5438 5.5376C25.6 5.5376 26.4625 6.4001 26.4625 7.45635Z" fill=""/>
+                </svg>                
+        </a>
+        <a href="" class="social-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29.6313 0H2.3625C1.05625 0 0 1.03125 0 2.30625V29.6875C0 30.9625 1.05625 32 2.3625 32H29.6313C30.9375 32 32 30.9625 32 29.6938V2.30625C32 1.03125 30.9375 0 29.6313 0ZM9.49375 27.2687H4.74375V11.9937H9.49375V27.2687ZM7.11875 9.9125C5.59375 9.9125 4.3625 8.68125 4.3625 7.1625C4.3625 5.64375 5.59375 4.4125 7.11875 4.4125C8.6375 4.4125 9.86875 5.64375 9.86875 7.1625C9.86875 8.675 8.6375 9.9125 7.11875 9.9125ZM27.2687 27.2687H22.525V19.8438C22.525 18.075 22.4937 15.7937 20.0562 15.7937C17.5875 15.7937 17.2125 17.725 17.2125 19.7188V27.2687H12.475V11.9937H17.025V14.0813H17.0875C17.7187 12.8813 19.2688 11.6125 21.575 11.6125C26.3813 11.6125 27.2687 14.775 27.2687 18.8875V27.2687V27.2687Z" fill=""/>
+                </svg>                
+        </a>
+        <a href="" class="social-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_88_1359)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0004 0.666504C12.2021 0.668475 8.52825 2.01378 5.63591 4.46187C2.74356 6.90995 0.821286 10.3012 0.212807 14.0292C-0.395671 17.7572 0.349317 21.5788 2.31458 24.8107C4.27983 28.0427 7.3372 30.4742 10.94 31.6705C11.7348 31.818 12.0342 31.3254 12.0342 30.9065C12.0342 30.4876 12.0183 29.2732 12.013 27.9455C7.56194 28.907 6.62139 26.0672 6.62139 26.0672C5.89545 24.2231 4.84626 23.7384 4.84626 23.7384C3.39437 22.7531 4.9549 22.7715 4.9549 22.7715C6.56311 22.8848 7.40829 24.4128 7.40829 24.4128C8.83369 26.8443 11.1519 26.1409 12.0633 25.73C12.2064 24.6999 12.6224 23.9992 13.0807 23.6014C9.52519 23.201 5.78947 21.8363 5.78947 15.7404C5.76743 14.1594 6.35744 12.6306 7.43743 11.4701C7.27316 11.0697 6.72472 9.45215 7.59374 7.25508C7.59374 7.25508 8.93702 6.82831 11.9945 8.88576C14.617 8.17267 17.3839 8.17267 20.0064 8.88576C23.0612 6.82831 24.4018 7.25508 24.4018 7.25508C25.2735 9.44688 24.7251 11.0644 24.5608 11.4701C25.6442 12.6308 26.2354 14.1623 26.2114 15.7457C26.2114 21.8548 22.4677 23.201 18.9069 23.5935C19.4791 24.0887 19.9905 25.0555 19.9905 26.5413C19.9905 28.6699 19.972 30.3823 19.972 30.9065C19.972 31.3306 20.2607 31.8259 21.0715 31.6705C24.6747 30.474 27.7323 28.0421 29.6976 24.8096C31.6628 21.5771 32.4074 17.7549 31.7982 14.0266C31.189 10.2982 29.2658 6.90698 26.3725 4.45931C23.4792 2.01165 19.8045 0.667225 16.0057 0.666504H16.0004Z" fill=""/>
+                <path d="M6.05933 23.5093C6.02489 23.5884 5.89771 23.6121 5.79439 23.5568C5.69106 23.5014 5.61423 23.3987 5.65132 23.317C5.68841 23.2354 5.81294 23.2143 5.91627 23.2696C6.01959 23.3249 6.09907 23.4303 6.05933 23.5093Z" fill=""/>
+                <path d="M6.70847 24.2284C6.6536 24.2558 6.59083 24.2635 6.5309 24.2501C6.47096 24.2366 6.41761 24.2029 6.37994 24.1546C6.27661 24.0439 6.2554 23.8912 6.33489 23.8227C6.41437 23.7542 6.55745 23.7858 6.66078 23.8964C6.76411 24.0071 6.78795 24.1599 6.70847 24.2284Z" fill=""/>
+                <path d="M7.33891 25.1427C7.24088 25.2112 7.07396 25.1427 6.98123 25.0057C6.95559 24.9811 6.9352 24.9517 6.92127 24.9191C6.90733 24.8865 6.90015 24.8515 6.90015 24.816C6.90015 24.7806 6.90733 24.7456 6.92127 24.713C6.9352 24.6804 6.95559 24.6509 6.98123 24.6264C7.07926 24.5605 7.24618 24.6264 7.33891 24.7607C7.43164 24.8951 7.43429 25.0742 7.33891 25.1427V25.1427Z" fill="white"/>
+                <path d="M8.19474 26.028C8.10731 26.1255 7.9298 26.0991 7.78408 25.9674C7.63836 25.8357 7.60391 25.6565 7.69134 25.5617C7.77877 25.4669 7.95628 25.4932 8.1073 25.6223C8.25832 25.7514 8.28747 25.9332 8.19474 26.028V26.028Z" fill=""/>
+                <path d="M9.39482 26.544C9.35508 26.6678 9.17491 26.7232 8.99475 26.6705C8.81459 26.6178 8.69536 26.4703 8.7298 26.3438C8.76425 26.2174 8.94706 26.1594 9.12987 26.2174C9.31268 26.2753 9.42926 26.4149 9.39482 26.544Z" fill=""/>
+                <path d="M10.7038 26.6337C10.7038 26.7628 10.5554 26.8735 10.3647 26.8761C10.1739 26.8787 10.0176 26.7734 10.0176 26.6443C10.0176 26.5152 10.1659 26.4045 10.3567 26.4019C10.5475 26.3993 10.7038 26.502 10.7038 26.6337Z" fill=""/>
+                <path d="M11.9226 26.4309C11.9465 26.56 11.814 26.6943 11.6232 26.7259C11.4325 26.7576 11.2655 26.6812 11.2417 26.5547C11.2179 26.4283 11.3556 26.2913 11.5411 26.257C11.7265 26.2228 11.8988 26.3018 11.9226 26.4309Z" fill=""/>
+                </g>
+                <defs>
+                <clipPath id="clip0_88_1359">
+                <rect width="32" height="32" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>                
+        </a>
+    </div>
+</footer>
 
 
 <script src="./app.js"></script>
