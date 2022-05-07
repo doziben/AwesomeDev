@@ -58,6 +58,7 @@ function newHover(e) {
 
 //Passing back to CSS file
 const primaryHover = newHover(mainColor)
-const test = root.style  = `--primary-hover: rgba(${primaryHover});`;
-console.log(test)
-console.log(getColor());
+document.body.style  = `--primary-hover: rgba(${primaryHover});`;
+
+getColor()
+
