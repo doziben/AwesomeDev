@@ -1,8 +1,8 @@
 //Header Component
 .header {
     display: flex;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     justify-content: space-between;
     align-items: center;
 
@@ -15,14 +15,14 @@
             position: fixed;
             width: 100vw;
             height: 100vh;
-            top: 4rem;
+            top: 0;
             right: 0;
             left: 0;
             background-color: var(--dark-main-color);
             z-index: 999;
 
             .nav-links {
-                margin-top: 4rem;
+                margin-top: 2rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -50,5 +50,38 @@
     100% {
         transform: translateY(0px);
         opacity: 100;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .header {
+        
+        &-nav {
+            #openNav {
+                display: none;
+            }
+            nav {
+                display: block;
+                position: relative;
+                width: auto;
+                height: auto;
+                background-color: none;
+                z-index: 0;
+                width: fit-content;
+
+                .nav-links {
+                    flex-direction: row;
+                    margin: auto;
+                    gap: 1rem;
+                }
+
+                a.header-nav-link {
+                    font-size: 1.1rem !important;
+                    animation-name: none !important;
+                }
+
+
+            }
+        }
     }
 }

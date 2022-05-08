@@ -62,3 +62,20 @@ document.body.style  = `--primary-hover: rgba(${primaryHover});`;
 
 getColor()
 
+
+// Open Nav
+
+let mobileMenu = document.querySelector('#openNav');
+let navBar = document.querySelector('nav');
+
+const openNav = () => {
+    if(navBar.style.display = "none"){
+        navBar.style.display = "block"
+    }
+    else if (navBar.style.display = "block") {
+        navBar.style.display = "none"
+    }
+}
+
+
+mobileMenu.addEventListener('click', ()=> {openNav()})

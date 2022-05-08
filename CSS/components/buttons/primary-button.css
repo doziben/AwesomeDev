@@ -6,7 +6,19 @@
     font-size: 1.1rem;
     background-color: var(--primary-color);
     padding: 1rem 1.5rem;
-    width: 10rem;
+    width: auto;
     margin-top: 1rem;
     border-radius: 12px;
+}
+
+@media only screen and (min-width:768px) {
+    .primary-cta {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .primary-cta {
+        font-size: 1.1rem;
+    }
 }

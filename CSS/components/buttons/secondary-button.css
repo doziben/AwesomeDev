@@ -11,3 +11,9 @@
     margin-bottom: 2rem;
     border-radius: 12px;
 }
+
+@media only screen and (min-width:768px) {
+    .secondary-cta {
+        font-size: 1.4rem;
+    }
+}

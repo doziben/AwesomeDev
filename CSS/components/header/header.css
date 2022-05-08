@@ -2,8 +2,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -21,7 +21,7 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  top: 4rem;
+  top: 0;
   right: 0;
   left: 0;
   background-color: var(--dark-main-color);
@@ -29,7 +29,7 @@
 }
 
 .header-nav nav .nav-links {
-  margin-top: 4rem;
+  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,6 +78,36 @@
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     opacity: 100;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header-nav #openNav {
+    display: none;
+  }
+  .header-nav nav {
+    display: block;
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: none;
+    z-index: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .header-nav nav .nav-links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: auto;
+    gap: 1rem;
+  }
+  .header-nav nav a.header-nav-link {
+    font-size: 1.1rem !important;
+    -webkit-animation-name: none !important;
+            animation-name: none !important;
   }
 }
 /*# sourceMappingURL=header.css.map */
