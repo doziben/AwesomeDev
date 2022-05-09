@@ -14,6 +14,11 @@
 
 @media only screen and (min-width:768px) {
     .secondary-cta {
-        font-size: 1.4rem;
+        font-size: 1rem;
+        transition: background-color 0.1s ease-in-out;
+    }
+
+    .secondary-cta:hover {
+        background-color: var(--dark-grey-color);
     }
 }

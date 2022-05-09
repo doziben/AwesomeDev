@@ -13,6 +13,7 @@ footer {
         &-icon {
             svg {
                 fill: white;
+                transition: fill ease-in-out 0.2s;
 
                 &:hover {
                     fill: var(--primary-color)

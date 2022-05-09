@@ -19,6 +19,11 @@
 
 @media only screen and (min-width:1024px) {
     .primary-cta {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        transition: background-color 0.1s ease-in-out;
+    }
+
+    .primary-cta:hover {
+        background-color: var(--primary-hover);
     }
 }

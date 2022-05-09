@@ -76,11 +76,15 @@
                 }
 
                 a.header-nav-link {
-                    font-size: 1.1rem !important;
+                    font-size: 1rem !important;
                     animation-name: none !important;
+                    transition: all 0.1s ease-in-out;
+
+                    &:hover {
+                        color: var(--primary-hover);
+                        font-weight: 700;
+                    }
                 }
-
-
             }
         }
     }

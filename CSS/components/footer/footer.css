@@ -23,6 +23,8 @@ footer .social {
 
 footer .social-icon svg {
   fill: white;
+  -webkit-transition: fill ease-in-out 0.2s;
+  transition: fill ease-in-out 0.2s;
 }
 
 footer .social-icon svg:hover {

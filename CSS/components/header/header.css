@@ -105,9 +105,15 @@
     gap: 1rem;
   }
   .header-nav nav a.header-nav-link {
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
     -webkit-animation-name: none !important;
             animation-name: none !important;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  .header-nav nav a.header-nav-link:hover {
+    color: var(--primary-hover);
+    font-weight: 700;
   }
 }
 /*# sourceMappingURL=header.css.map */
