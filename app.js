@@ -63,19 +63,42 @@ document.body.style  = `--primary-hover: rgba(${primaryHover});`;
 getColor()
 
 
-// Open Nav
-
 let mobileMenu = document.querySelector('#openNav');
 let navBar = document.querySelector('nav');
+let modeToggle = document.querySelector('.header-nav-mode')
+let body = document.querySelector('body')
+let logo = document.querySelectorAll('.logo')
+let closeMenu = document.querySelector('#closeNav')
 
+// Nav Controllers
 const openNav = () => {
     if(navBar.style.display = "none"){
         navBar.style.display = "block"
     }
-    else if (navBar.style.display = "block") {
+}
+
+const closeNav = () => {
+    if(navBar.style.display = "block") {
         navBar.style.display = "none"
     }
 }
-
-
 mobileMenu.addEventListener('click', ()=> {openNav()})
+closeMenu.addEventListener('click', ()=> {closeNav()})
+
+// Dark and Light Mode Toggle
+modeToggle.addEventListener('click', ()=> {
+    body.classList.toggle('dark');
+    if (!body.classList.contains('dark')){
+        logo.forEach((e)=> {e.src = "Assets/Icons/Logo - light.svg"})
+        mobileMenu.src = "Assets/Icons/nav - icon - light.svg"
+        closeMenu.src = "Assets/Icons/Close - light.svg"
+    }
+
+    else {
+        logo.forEach((e)=> {e.src = "Assets/Icons/Logo.svg"});
+        mobileMenu.src = "Assets/Icons/nav - icon.svg"
+        closeMenu.src = "Assets/Icons/Close.svg"
+    }
+
+})
+
