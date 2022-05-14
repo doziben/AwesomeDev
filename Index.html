@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/main.css">
     <link rel="shortcut icon" href="assets/Icons/Favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Awesome Developer</title>
 </head>
 <body class="dark">
@@ -28,7 +29,7 @@
         </div>
     </header>
 
-    <section class="hero container" id="hero">
+    <section class="hero container" id="hero" data-aos="fade-up">
         <img src="Assets/Images/memoji.png" alt="hero image" class="hero-img">
         <div class="hero-text">
             <h1>Solving Problems with Creative Development</h1>
@@ -37,7 +38,7 @@
         </div>
     </section>
 
-    <section class="brands container">
+    <section class="brands container" data-aos="fade-up">
         <div class="brands-row">
             <img src="Assets/Icons/Verizon.svg" class="brands-row-logo" alt="Verizon logo">
             <img src="Assets/Icons/Visa.svg" class="brands-row-logo" alt="VISA logo">
@@ -48,7 +49,7 @@
         </div>
     </section>
 
-    <section class="about container" id="aboutMe">
+    <section class="about container" id="aboutMe" data-aos="fade-up">
         <div class="about-text">
             <p>AWESOME DEV</p>
             <h1>Frontend Engineer based in Lagos</h1>
@@ -65,7 +66,7 @@
         </div>
     </section>
 
-    <section class="skills container" id="skills">
+    <section class="skills container" id="skills" data-aos="fade-up">
         <div class="skills-text">
             <h1>Bringing Ideas <br> to Life</h1>
             <p> Award-Winning web developer with over 3+ years of working experience with FAANG companies like Apple, Google, Facebook, and many more</p>
@@ -91,11 +92,11 @@
         </div>
     </section>
 
-    <section class="portfolio container" id="portfolio">
+    <section class="portfolio container" id="portfolio" data-aos="fade-up">
 
         <h1>Projects</h1>
         <div class="portfolio-row">
-            <div class="portfolio-row-left">
+            <div class="portfolio-row-left" data-aos="fade-up">
                 <div class="portfolio-row-left-project">
                     <img src="Assets/Images/Portfolio-Image-1.png" class="portfolio-row-left-project-image">
                     <a href=""><div class="portfolio-row-left-project-text">
@@ -104,7 +105,7 @@
                     </div></a>
                 </div>
 
-                <div class="portfolio-row-left-project">
+                <div class="portfolio-row-left-project" >
                     <img src="Assets/Images/Portfolio-Image-2.png" class="portfolio-row-left-project-image">
                     <a href=""><div class="portfolio-row-left-project-text">
                         <h3>Relo</h3>
@@ -113,7 +114,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-row-right">
+            <div class="portfolio-row-right" data-aos="fade-up" data-aos-delay="450">
                 <div class="portfolio-row-right-project">
                     <img src="Assets/Images/Portfolio-Image-3.png" class="portfolio-row-right-project-image">
                     <a href=""><div class="portfolio-row-right-project-text">
@@ -133,10 +134,19 @@
         </div>
     </section>
 
-    <section class="banner container" id="banner">
+    <section class="banner container" id="banner" data-aos="fade-up">
         <h1>Let's Work <br> Together</h1>
         <a href="" class="secondary-cta"> Work with me</a>
     </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 250,
+          duration: 800
+      });
+    </script>
+
 </body>
 
 <footer class="container">
