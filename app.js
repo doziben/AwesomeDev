@@ -62,13 +62,17 @@ document.body.style  = `--primary-hover: rgba(${primaryHover});`;
 
 getColor()
 
-
+let spinner = document.querySelector('.spinnerBCG')
 let mobileMenu = document.querySelector('#openNav');
 let navBar = document.querySelector('nav');
 let modeToggle = document.querySelector('.header-nav-mode')
 let body = document.querySelector('body')
 let logo = document.querySelectorAll('.logo')
 let closeMenu = document.querySelector('#closeNav')
+
+window.addEventListener('load', ()=> {
+    spinner.style.display = "none";
+})
 
 // Nav Controllers
 const openNav = () => {

@@ -195,6 +195,39 @@ body {
     padding: 0;
 }
 
+.spinnerBCG {
+    display: grid;
+    place-content: center;
+    content: "";
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    position: fixed;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .spinner {
+        content: "";
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50px;
+        border: 8px solid var(--primary-color);
+        border-top-color: white;
+        animation-name: loading;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes loading {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 h1 {
      font-family: "Fraunces", 'serif';
      font-size: 2.3rem;
